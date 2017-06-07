@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Viewport defines the area of screen that browser can render content to.
+    width=device-width instructs the page to match the screen's width in device
+    independent pixels by reflowing content. initial-scale=1.0 means a 1:1
+    relationship between the device independent pixels and css pixels. Without
+    initial-scale=1, some browers will keep the page width constant when rotating
+    to landscape mode.-->
+
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" type="text/css"
+     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="header_inner">
+        <img class="header_logo" src="images/udacity.png" alt="udacity logo">
+        <!--The default display of img is inline-block-->
+        <hgroup class="header_title">
+          <h1 class="header_name">
+            Jeff Guo
+          </h1>
+          <h3 class="header_career">
+            Web Developer
+          </h3>
+        </hgroup>
+      </div>
+    </header>
+
+    <main>
+      <section class="color_and_picture">
+        <div class="table">
+          <div class="squ_words">
+            <div class="square square1"></div>
+            <div class="words">#02b3e4</div>
+          </div>
+          <div class="squ_words">
+            <div class="square square2"></div>
+            <div class="words">#2d3c49</div>
+          </div>
+          <div class="squ_words">
+            <div class="square square3"></div>
+            <div class="words">#7d97ad</div>
+          </div>
+        </div>
+        <img class="web_dev" src="images/web.png" alt="picture of web development">
+
+      </section>
+
+      <section class="work">
+        <h2 class="work_title">Feathered Work</h2>
+        <ul>
+
+          <li class="github_work">
+            <figure>
+              <img class="work_image" src="images/turtle95.jpg" alt="picture for github">
+              <figcaption>
+                <p class="big_cap">Movie Trailer</p>
+                <p class="link">
+                  <a href="https://github.com/mediaProduct2017/Movie_Trailer_Website">
+                  https://github.com/media/Movie
+                  </a>
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="github_work">
+            <figure>
+              <img class="work_image" src="images/research95.jpg" alt="picture for github">
+              <figcaption>
+                <p class="big_cap">Data Analysis</p>
+                <p class="link">
+                  <a href="https://github.com/mediaProduct2017/dataAnalysis">
+                  https://github.com/media/dataAnalysis
+                  </a>
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="github_work">
+            <figure>
+              <img class="work_image" src="images/stemcellaction95.jpg" alt="picture for github">
+              <figcaption>
+                <p class="big_cap">Reading</p>
+                <p class="link">
+                  <a href="https://github.com/mediaProduct2017/reading">
+                  https://github.com/media/reading
+                  </a>
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </main>
+  </body>
+</html>
