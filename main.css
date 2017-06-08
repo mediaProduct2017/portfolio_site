@@ -26,25 +26,30 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
-header, nav, footer, section, article, div {
+header, section, article, div {
   box-sizing: border-box;
+  position: static
 }
 /*The width and height properties of a box (and min/max properties) includes
 content, padding and border, but not the margin
 */
 
+img, embed, object, video {
+  max-width: 100%;
+}
+
 ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 figure {
     display: block;
     -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
-    -webkit-margin-start: 10px;
-    -webkit-margin-end: 10px;
+    -webkit-margin-start: 0.8em;
+    -webkit-margin-end: 0.8em;
 }
 
 /*
@@ -53,18 +58,9 @@ figure {
  *
  */
 
-.header {
-  /* min-height: 56px; */
-  /* transition: min-height 0.3s; */
-  height: auto;
-}
-
-.header_inner {
-  /* box-shadow: 0 5px 2px rgba(0, 0, 0, 0.26); */
+.container {
   border-style: solid;
-  border-width: 0 0 4px 0;
-  /*width: 70%;
-  margin: 2em 10% 0 20%;*/
+  border-width: 0 0 0.3em 0;
   width: 90%;
   margin: 2em auto 0 auto;
 }
@@ -76,7 +72,6 @@ figure {
 }
 
 .header_title {
-  /* margin: 0 0 0.2em 0.2em;*/
   display: inline-block;
   text-align: right;
   float: right; /* For grid layout */
@@ -86,14 +81,14 @@ figure {
   font-weight: 100;
   font-size: 3em;
   display: block;
-  color: #212121;
+  /*color: #212121;*/
 }
 
 .header_career {
   font-weight: 300;
   font-size: 1.5em;
   display: block;
-  color: #212121;
+  /*color: #212121;*/
 }
 
 /* display has several values, such as block, inline and inline-block
@@ -106,7 +101,6 @@ figure {
  */
 
 main {
-  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);*/
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -123,14 +117,15 @@ main {
    margin: 0.5em auto 0.5em auto;
  }
 
- .web_dev {
-   display: block;
-   width:100%;
-   max-width:1559px;
- }
-
 .table {
   width:100%;
+}
+
+.web_dev {
+  display: block;
+  width:100%;
+  max-width:1559px;
+  margin: 0 auto;
 }
 
 .squ_words {
@@ -147,6 +142,8 @@ main {
 
 .words {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .square1 {
@@ -197,4 +194,63 @@ main {
   font-weight: 500;
   font-size: 2em;
   margin: 0.5em auto 0.5em auto;
+}
+
+figcaption a {
+  padding: 1.5em 0 1.5em 0;
+  min-width: 48px;
+  min-height: 48px;
+  max-width: 100%;
+}
+
+/*
+ * breakpoint
+ */
+
+@media screen and (min-width: 660px) {
+
+  .container {
+    border-style: solid;
+    border-width: 0 0 0.3em 0;
+    width: 70%;
+    margin: 2em 10% 0 20%;
+  }
+
+  .color_and_picture {
+    width: 90%;
+    margin: 0.5em 10% 0.5em 0;
+  }
+
+  .table {
+    display: inline-block;
+    width: 22.2%;
+    vertical-align: middle;
+  }
+
+  .web_dev {
+    display: inline-block;
+    width: 77%;
+    max-width: 1559px;
+    /*float: right;*/
+    vertical-align: middle;
+    margin: 0 auto;
+  }
+
+  .squ_words {
+    display: block;
+    width: 100%;
+    margin: 0 auto 0.5em auto;
+  }
+
+  .work {
+    width: 70%;
+    margin: 0.5em 10% 0.5em 20%;
+  }
+
+  .github_work {
+    float: left;
+    text-align: center;
+    width: 230px;
+  }
+
 }
