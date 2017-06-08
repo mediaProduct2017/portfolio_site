@@ -11,9 +11,9 @@
     to landscape mode.-->
 
     <title>Portfolio Site</title>
-    <link rel="stylesheet" type="text/css"
+    <link rel="stylesheet"
      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="main.css">
   </head>
 
   <body>
@@ -21,46 +21,45 @@
     <header class="container">
       <img class="header_logo" src="images/udacity.png" alt="udacity logo">
       <!--The default display of img is inline-block-->
-      <hgroup class="header_title">
+      <section class="header_title">
         <h1 class="header_name">
           Jeff Guo
         </h1>
         <h3 class="header_career">
           Web Developer
         </h3>
-      </hgroup>
-
+      </section>
     </header>
 
     <main>
+
       <section class="color_and_picture">
         <section class="table">
           <section class="squ_words">
             <div class="square square1"></div>
-            <p class="words">#02b3e4</p>
+            <h4 class="words">#02b3e4</h4>
           </section>
           <section class="squ_words">
             <div class="square square2"></div>
-            <p class="words">#2d3c49</p>
+            <h4 class="words">#2d3c49</h4>
           </section>
           <section class="squ_words">
             <div class="square square3"></div>
-            <p class="words">#7d97ad</p>
+            <h4 class="words">#7d97ad</h4>
           </section>
         </section>
         <img class="web_dev" src="images/web.png" alt="picture of web development">
-
       </section>
 
       <section class="work">
         <h2 class="work_title">Feathered Work</h2>
-        <ul>
-
+        <ul class="work_container">
           <li class="github_work">
             <figure>
-              <img class="work_image" src="images/turtle95.jpg" alt="picture for github">
+              <img class="work_image" src="images/turtle95.jpg"
+              alt="picture for movie trailer project">
               <figcaption>
-                <p class="big_cap">Movie Trailer</p>
+                <h3 class="big_cap">Movie Trailer</h3>
                 <p class="link">
                   <a href="https://github.com/mediaProduct2017/Movie_Trailer_Website">
                   https://github.com/media/Movie
@@ -72,9 +71,10 @@
 
           <li class="github_work">
             <figure>
-              <img class="work_image" src="images/research95.jpg" alt="picture for github">
+              <img class="work_image" src="images/research95.jpg"
+              alt="picture for data analysis project">
               <figcaption>
-                <p class="big_cap">Data Analysis</p>
+                <h3 class="big_cap">Data Analysis</h3>
                 <p class="link">
                   <a href="https://github.com/mediaProduct2017/dataAnalysis">
                   https://github.com/media/dataAnalysis
@@ -86,9 +86,10 @@
 
           <li class="github_work">
             <figure>
-              <img class="work_image" src="images/stemcellaction95.jpg" alt="picture for github">
+              <img class="work_image" src="images/stemcellaction95.jpg"
+              alt="picture for reading project">
               <figcaption>
-                <p class="big_cap">Reading</p>
+                <h3 class="big_cap">Reading</h3>
                 <p class="link">
                   <a href="https://github.com/mediaProduct2017/reading">
                   https://github.com/media/reading
@@ -97,9 +98,7 @@
               </figcaption>
             </figure>
           </li>
-
         </ul>
-
       </section>
 
     </main>
